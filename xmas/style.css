@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+
+}
+
+.container{
+    min-height: 100vh;
+    background: url(background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: white;
+    text-align: center;
+
+}
+.text h1{
+    font-size: 4em;
+    font-family: monospace;
+}
+.text p{
+    color:rgb(206, 34, 34);
+    font-weight: bold;
+}
+@keyframes snowfall1{
+    100%{
+        background-position: 70em 70em;
+    }
+}
+
+@keyframes snowfall2{
+    100%{
+        background-position: 50em 0;
+    }
+}
+.snow1, .snow2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(snow.png);
+    background-position: 0;
+}
+
+.snow1{
+    background-size: 70em;
+    animation: snowfall1 10s linear infinite;
+}
+.snow2{
+    background-size: 50em;
+    animation: snowfall2 10s linear infinite;
+}
