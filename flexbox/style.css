@@ -1,10 +1,10 @@
 .flex-container{
     background-color: violet;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row-reverse;
     height:500px;
-    justify-content: center;
+    justify-content: right;
+    align-items: bottom;
 }
 
 .flex-container > div {
@@ -19,6 +19,7 @@
 @keyframes colorchange {
     0%{
         background-color: rgb(223, 19, 19);
+        width: 10%;
     }
     25%{
         background-color: rgb(255, 255, 255);
@@ -28,7 +29,7 @@
     }
     75%{
         background-color: rgb(30, 172, 177);
-        width: 40%;
+     width: 20%;
     }
     100%{
         background-color: rgb(161, 161, 87);

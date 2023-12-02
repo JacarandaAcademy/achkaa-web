@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First JS Code</title>
+</head>
+
+<body>
+    <div id="code" style="background-color: maroon;">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" />
+        <button type="button" onclick="printName()">Submit</button>
+    </div>
+    <div>
+        <input id="a" type="text" /> +
+        <input id="b" type="text" />
+        <button onclick="calcSum()">+ =</button>
+        <button onclick="calcMin()">- =</button>
+        <button onclick="calcMul()">* =</button>
+        <button onclick="calcDiv()">/ =</button>
+        <input id="s" type="text" />
+    </div>
+    <script>
+        function printName() {
+            let name = document.getElementById("first-name").value
+            let last = document.getElementById("last-name").value;
+
+            alert("Your Full Name: " + name + " " + last);
+        }
+        function calcSum() {
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            const s= parseInt(a)+parseInt(b);
+            document.getElementById("s").value = s;
+        }
+        function calcMin(){
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            const s= parseInt(a)-parseInt(b);
+            document.getElementById("s").value = s;
+        }
+        function calcDiv(){
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            const s= parseInt(a)/parseInt(b);
+            document.getElementById("s").value = s;
+        }
+        function calcMul(){
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            const s= parseInt(a)*parseInt(b);
+            document.getElementById("s").value = s;
+        }
+    </script>
+
+</body>
+
+</html>
