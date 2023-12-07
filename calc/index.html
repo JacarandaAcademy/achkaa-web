@@ -43,11 +43,18 @@
                     switch(operation){
                         case '+':
                             const sum=parseFloat(memory)+parseFloat(lastValue);
-                            document.getElementById("number").value =sum;
-                            memory =undefined
-                            operation =undefined
+                            document.getElementById("number").value = sum;
+                            memory=undefined
+                            operation=undefined
+                            return;
+                        case '-':
+                            const sum2=parseFloat(memory)-parseFloat(lastValue);
+                            document.getElementById("number").value=sum2;
+                            memory=undefined
+                            operation=undefined
                             return;
                     }
+                        
                 }
             }
             function pressNumber(num){
