@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title>To Do List</title>
+        <script src="todo.js" defer></script>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .main{
+                background-color: rgb(110, 105, 105);
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                width: 100px;
+            }
+            .box{
+                border-radius: 0.5em;
+                background-color: beige;
+                padding: 10px;
+                height: 96vh;
+            
+            }
+            .checked{
+                text-decoration: line-through;
+                background-color: gainsboro;
+            }
+            #container{
+                height: 96%;
+                overflow-y: scroll;
+                min-width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">    
+            <div class="box">
+                <button onclick="add()" >Add</button>
+                <div id="container" class="container"></div>
+            </div>
+        </div>
+    </body>
+</html>
